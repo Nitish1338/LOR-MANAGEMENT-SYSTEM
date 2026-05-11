@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reference Letter</title>
+
+    <style>
+        @page {
+            size: A4;
+            margin: 1px;
+
+        }
+
+        body {
+            font-family: "Times New Roman", serif;
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            line-height: 1.6;
+            /* border:solid; */
+            padding: 20px
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid darkblue;
+            padding-bottom: 10px;
+        }
+
+        .logo {
+            width: 80px;
+        }
+
+        .logo img {
+            width: 110px;
+            margin-left: 15px;
+            font-size: medium;
+        }
+
+        .title {
+            flex: 1;
+            text-align: center;
+
+        }
+
+        .title h2 {
+            margin: 0px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            line-height: normal;
+            color: darkblue;
+        }
+
+        .title h4 {
+            font-size: 17px;
+            margin: 0px;
+            line-height: normal;
+            color: darkblue;
+        }
+
+        .contact {
+            display: flex;
+            justify-content: space-around;
+            font-size: 14px;
+            border-bottom: 2px solid darkblue;
+            padding: 4px 0;
+            color: darkblue;
+        }
+
+        .mainletter {
+            padding: 15px;
+        }
+
+        .heading {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .reference {
+            display: flex;
+            justify-content: right;
+            font-size: 16px;
+        }
+
+        .address {
+            margin-top: 35px;
+            font-size: 16px;
+        }
+
+        .subject {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .content {
+            margin-top: 20px;
+            text-align: justify;
+            font-size: 16px;
+        }
+
+        .signature {
+            margin-top: 70px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="header">
+
+        <div class="logo">
+            <img src="data:image/jpeg;base64,{{image}}" alt="Bit Mesra" class="college-logo">
+        </div>
+
+        <div class="title">
+            <h2>DEPARTMENT OF COMPUTER SCIENCE</h2>
+            <h2>BIRLA INSTITUTE OF TECHNOLOGY</h2>
+            <h4>Deemed University u/s 3 of UGC Act, 1956</h4>
+            <h4>Mesra - 835215 (RANCHI) INDIA</h4>
+        </div>
+
+    </div>
+
+    <div class="contact">
+        <span><b>Phone :</b> 0651-2275233 / 2276223</span>
+        <span><b>Fax :</b> 0651-2275401</span>
+        <span><b>Website :</b> www.bitmesra.ac.in</span>
+    </div>
+    <div class="mainletter">
+        <div class="reference">
+            <span><b>Reference No:- {{referenceNumber}}</b></span>
+        </div>
+
+
+        <div class="address">
+
+            <p>To<br>
+                {{recipient}},<br>
+                {{companyName}},<br>
+                {{companyAddress}}
+            </p>
+
+        </div>
+
+
+        <div class="subject">
+            Sub: Permission regarding internship in your esteemed organization.
+        </div>
+
+
+        <div class="content">
+
+            <p>Dear Sir / Madam,</p>
+
+            <p>
+                With reference to the above, this is to inform you that
+                <strong>Mr. {{fullName}}</strong>, S/O <strong>Mr. {{fatherName}}</strong>,
+                bearing Roll No. <strong>{{classRollNumber}}</strong> is a bonafide student of
+                <strong>{{programme}}</strong> at <strong>Birla Institute of Technology, Mesra</strong>.
+                He is currently studying in the <strong>{{currentSemester}} semester</strong>.
+
+                As part of the academic curriculum, he is required to undertake an internship
+                to meet the credit requirements of the paper <strong>CA590</strong>.
+                The credit weightage of this paper is <strong>20 credits</strong>.
+
+                He is keenly interested in undertaking an internship in your esteemed organization.
+                We kindly request you to grant him permission to undertake the internship.
+
+                After successful completion of the internship, he has to <strong> submit a project report
+                    duly signed / verified by your organization to the Department of Computer Science,
+                    Birla Institute of Technology, Mesra</strong>. His character and conduct are good to the best of our
+                knowledge.
+            </p>
+
+            <p>
+                Thank you in advance.<br>
+                With regards,</p>
+        </div>
+
+
+        <div class="signature">
+
+            <p><strong>(Dr. J. Bakas)</strong><br>
+                Assistant Professor,<br>
+                Department of Computer Science<br>
+                Birla Institute of Technology, Mesra
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
